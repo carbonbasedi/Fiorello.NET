@@ -1,0 +1,61 @@
+﻿@using Fiorello.Areas.admin.ViewModels.Product
+@model ProductDetailsVM
+<div class="m-4 form-group">
+	<h1>Product Title</h1>
+	<p>
+		@Model.Title
+	</p>
+	<br />
+	<h1>Product Price</h1>
+	<p>
+		@Model.Price
+	</p>
+	<br />
+	<h1>Product Type</h1>
+	<p>
+		@Model.Type
+	</p>
+	<br />
+
+	<div class="card shadow mb-4">
+		<div class="card-body">
+			<div class="table-responsive">
+				<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+					<thead>
+						<tr>
+							<th>Photo</th>
+							<th>On Display</th>
+							<th>Order</th>
+							<th>Created At</th>
+						</tr>
+					</thead>
+					<tbody>
+						@foreach (var photo in Model.Photos)
+						{
+							<tr>
+								<td>
+									<img class="w-25" src="~/assets/img/@photo.Name">
+								</td>
+								<td>
+									@if(photo.IsMain)
+									{
+										<p class="text-success">Main</p>
+									}
+									else
+									{
+										<p class="text-danger">Sub-Main</p>
+									}
+								</td>
+								<td>@photo.Order</td>
+								<td>
+									@Model.CreatedAt.ToString("dd.MM.yyyy HH:mm:ss")
+								</td>
+							</tr>
+						}
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+
+</div>
