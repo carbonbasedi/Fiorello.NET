@@ -28,7 +28,7 @@ namespace Fiorello.Areas.admin.Controllers
         {
             var model = new ProductIndexVM
             {
-                Products = _context.Products.Include(p => p.ProductCategory).Where(p => !p.IsDeleted).ToList()
+                Products = _context.Products.Include(p => p.ProductCategory).Include(p => p.ProductPhotos).Where(p => !p.IsDeleted).ToList()
             };
 
             return View(model);
@@ -246,6 +246,7 @@ namespace Fiorello.Areas.admin.Controllers
             product.About = model.About;
             product.Type = model.Type;
             product.AdditionalInformation = model.AdditionalInfo;
+            product.ProductCategoryId = productCategory.Id;
             product.ProductCategory = productCategory;
             product.ModifiedAt = DateTime.Now;
 
@@ -313,21 +314,35 @@ namespace Fiorello.Areas.admin.Controllers
             _context.ProductPhotos.Update(productPhoto);
             _context.SaveChanges();
 
-            return RedirectToAction(nameof(Details), "product", new { id = productPhoto.ProductId });
+            return RedirectToAction(nameof(Details), "product", new { id = productPhoto.ProductId } );
         }
-        #endregion
 
         [HttpGet]
-        public IActionResult Activate(int id) 
+        public IActionResult DeletePhoto(int id)
         {
             var productPhoto = _context.ProductPhotos.FirstOrDefault(p => p.Id == id);
             if (productPhoto is null) return NotFound();
 
-            var dbProductPhotos = _context.ProductPhotos.Where(p => p.Id != productPhoto.id);
+            _fileService.Delete(productPhoto.Name);
+            _context.ProductPhotos.Remove(productPhoto);
+            _context.SaveChanges();
 
-            if(!productPhoto.IsMain)
+            return RedirectToAction(nameof(Update),"product", new { id = productPhoto.ProductId });
+        }
+        #endregion
+
+        [HttpGet]
+        public IActionResult SetMain(int id)
+        {
+            var productPhoto = _context.ProductPhotos.Include(p => p.Product).FirstOrDefault(p => p.Id == id);
+            if (productPhoto is null) return NotFound();
+
+            var dbProductPhotos = _context.ProductPhotos.Include(p => p.Product)
+                                                        .Where(p => p.Id != productPhoto.Id && p.ProductId == productPhoto.ProductId);
+
+            if (!productPhoto.IsMain)
             {
-                foreach(var dbProductPhoto in dbProductPhotos)
+                foreach (var dbProductPhoto in dbProductPhotos)
                 {
                     dbProductPhoto.IsMain = false;
                     _context.ProductPhotos.Update(dbProductPhoto);
@@ -336,11 +351,11 @@ namespace Fiorello.Areas.admin.Controllers
             }
 
             productPhoto.IsMain = !productPhoto.IsMain;
-
             _context.ProductPhotos.Update(productPhoto);
             _context.SaveChanges();
 
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(Update), "product", new { id = productPhoto.ProductId });
         }
+
     }
 }

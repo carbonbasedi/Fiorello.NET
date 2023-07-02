@@ -23,5 +23,8 @@ namespace Fiorello.DAL
 		public DbSet<ProductCategory> ProductCategories { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductPhoto> ProductPhotos { get; set; }
+        public DbSet<Duty> Duties { get; set; }
+        public DbSet<Worker> Workers { get; set; }
+        public DbSet<Faq> Faqs { get; set; }
     }
 }

@@ -8,7 +8,8 @@
         {
 			_webHostEnvironment = webHostEnvironment;
 		}
-        public void Delete(string photoName)
+
+		public void Delete(string photoName)
 		{
 			var filePath = Path.Combine(_webHostEnvironment.WebRootPath, "assets/img", photoName);
 

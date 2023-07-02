@@ -36,7 +36,7 @@ namespace Fiorello.Areas.admin.ViewModels.Product
 		public List<IFormFile> Photos { get; set; }
 
 		[Display(Name = "Product Category")]
-		public int ProductCategoryId { get; set; }
+		public int? ProductCategoryId { get; set; }
 		public List<SelectListItem>? ProductCategories { get; set; }
         public List<ProductPhoto>? ProductPhotos { get; set; }
     }

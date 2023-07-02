@@ -52,6 +52,12 @@
 						<a class="collapse-item" asp-action="index" asp-controller="product">
 							<span>Product</span>
 						</a>
+						<a class="collapse-item" asp-action="list" asp-controller="duty">
+							<span>Duty</span>
+						</a>
+						<a class="collapse-item" asp-action="list" asp-controller="worker">
+							<span>Worker</span>
+						</a>
 					</div>
 				</div>
 			</li>
@@ -155,6 +161,7 @@
 	<script src="~/admin/js/demo/chart-area-demo.js"></script>
 	<script src="~/admin/js/demo/chart-pie-demo.js"></script>
 	<script src="~/admin/js/script.js"></script>
+	@Html.Partial("_ValidationScriptsPartial")
 	@RenderSection("Scripts", false )
 
 </body>
