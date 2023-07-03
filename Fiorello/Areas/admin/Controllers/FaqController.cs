@@ -12,11 +12,11 @@ namespace Fiorello.Areas.admin.Controllers
 		private readonly AppDbContext _context;
 
 		public FaqController(AppDbContext context)
-        {
+		{
 			_context = context;
 		}
 		[HttpGet]
-        public IActionResult List()
+		public IActionResult List()
 		{
 			var model = new FaqListVM
 			{
@@ -92,13 +92,13 @@ namespace Fiorello.Areas.admin.Controllers
 		}
 
 		[HttpGet]
-		public IActionResult Delete(int id )
+		public IActionResult Delete(int id)
 		{
 			var faq = _context.Faqs.FirstOrDefault(f => f.Id == id && !f.IsDeleted);
 			if (faq is null) return NotFound();
 
 			faq.IsDeleted = true;
-			faq.DeletedAt = DateTime.Now;
+			faq.DeletedAt = DateTime.Now;  
 
 			_context.Faqs.Update(faq);
 			_context.SaveChanges();

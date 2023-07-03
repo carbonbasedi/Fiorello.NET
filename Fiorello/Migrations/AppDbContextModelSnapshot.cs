@@ -22,6 +22,63 @@ namespace Fiorello.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Fiorello.Models.Blog", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("About")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("About2")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("About3")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Image")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("ModifiedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Motto")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Motto2")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Subtitle")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Blogs");
+                });
+
             modelBuilder.Entity("Fiorello.Models.Duty", b =>
                 {
                     b.Property<int>("Id")
@@ -199,6 +256,70 @@ namespace Fiorello.Migrations
                     b.ToTable("ProductPhotos");
                 });
 
+            modelBuilder.Entity("Fiorello.Models.Slider", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime?>("ModifiedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Sliders");
+                });
+
+            modelBuilder.Entity("Fiorello.Models.SliderContent", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("About")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("ModifiedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("SliderId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SliderId");
+
+                    b.ToTable("SliderContents");
+                });
+
             modelBuilder.Entity("Fiorello.Models.Worker", b =>
                 {
                     b.Property<int>("Id")
@@ -263,6 +384,17 @@ namespace Fiorello.Migrations
                     b.Navigation("Product");
                 });
 
+            modelBuilder.Entity("Fiorello.Models.SliderContent", b =>
+                {
+                    b.HasOne("Fiorello.Models.Slider", "Slider")
+                        .WithMany("SliderContents")
+                        .HasForeignKey("SliderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Slider");
+                });
+
             modelBuilder.Entity("Fiorello.Models.Worker", b =>
                 {
                     b.HasOne("Fiorello.Models.Duty", "Duty")
@@ -287,6 +419,11 @@ namespace Fiorello.Migrations
             modelBuilder.Entity("Fiorello.Models.ProductCategory", b =>
                 {
                     b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("Fiorello.Models.Slider", b =>
+                {
+                    b.Navigation("SliderContents");
                 });
 #pragma warning restore 612, 618
         }

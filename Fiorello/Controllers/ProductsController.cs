@@ -19,7 +19,7 @@ namespace Fiorello.Controllers
 		{
 			var model = new ProductsIndexVM
 			{
-				Products = _context.Products.Include(p => p.ProductPhotos).Where(p => !p.IsDeleted).OrderByDescending(p => p.Id).Take(4).ToList()
+				Products = _context.Products.Include(p => p.ProductPhotos).Where(p => !p.IsDeleted).OrderByDescending(p => p.Id).Take(8).ToList()
 			};
 
 			return View(model);

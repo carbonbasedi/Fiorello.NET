@@ -29392,6 +29392,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\106475b8-c746-4587-a516-5397ff2ff4d2 8malish.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\13d7c917-6ee5-433a-8cc6-ff75692da0a8 feature-work-4.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Fiorello</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Fiorello</BasePath>
+      <RelativePath>assets/img/13d7c917-6ee5-433a-8cc6-ff75692da0a8 feature-work-4.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\13d7c917-6ee5-433a-8cc6-ff75692da0a8 feature-work-4.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\1989ffec-6a00-441b-85e4-e2a1592d8daf memmedaga.jpeg))">
       <SourceType>Package</SourceType>
       <SourceId>Fiorello</SourceId>
@@ -29423,6 +29439,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\2217a6bf-616a-4bcd-a3c6-5d21220c653d feature-work-3.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\2967942b-c197-4a80-bdf4-b043186f4f9f hitkem008.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Fiorello</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Fiorello</BasePath>
+      <RelativePath>assets/img/2967942b-c197-4a80-bdf4-b043186f4f9f hitkem008.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\2967942b-c197-4a80-bdf4-b043186f4f9f hitkem008.jpeg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\assets\img\31a5ffbd-d3ec-428a-8971-25f8c188a2d9 memmedaga.jpeg))">
       <SourceType>Package</SourceType>

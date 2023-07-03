@@ -26,5 +26,8 @@ namespace Fiorello.DAL
         public DbSet<Duty> Duties { get; set; }
         public DbSet<Worker> Workers { get; set; }
         public DbSet<Faq> Faqs { get; set; }
+        public DbSet<Slider> Sliders { get; set; }
+        public DbSet<SliderContent> SliderContents { get; set; }
+        public DbSet<Blog> Blogs { get; set; }
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "eqrAcWYMniEyuFmerbqY9ol6cB77JvQNK7Qv+Pi8OlU=",
+  "Hash": "h1ZCPo1sfc1DPIsEAwCp/UmhpWmtJ7LOflqVicB6fNI=",
   "Source": "Fiorello",
   "BasePath": "_content/Fiorello",
   "Mode": "Default",
@@ -31246,6 +31246,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\106475b8-c746-4587-a516-5397ff2ff4d2 8malish.jpg"
     },
     {
+      "Identity": "C:\\Users\\rusla\\source\\repos\\Fiorello\\Fiorello\\wwwroot\\assets\\img\\13d7c917-6ee5-433a-8cc6-ff75692da0a8 feature-work-4.jpg",
+      "SourceId": "Fiorello",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\rusla\\source\\repos\\Fiorello\\Fiorello\\wwwroot\\",
+      "BasePath": "_content/Fiorello",
+      "RelativePath": "assets/img/13d7c917-6ee5-433a-8cc6-ff75692da0a8 feature-work-4.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\13d7c917-6ee5-433a-8cc6-ff75692da0a8 feature-work-4.jpg"
+    },
+    {
       "Identity": "C:\\Users\\rusla\\source\\repos\\Fiorello\\Fiorello\\wwwroot\\assets\\img\\1989ffec-6a00-441b-85e4-e2a1592d8daf memmedaga.jpeg",
       "SourceId": "Fiorello",
       "SourceType": "Discovered",
@@ -31278,6 +31295,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\2217a6bf-616a-4bcd-a3c6-5d21220c653d feature-work-3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\rusla\\source\\repos\\Fiorello\\Fiorello\\wwwroot\\assets\\img\\2967942b-c197-4a80-bdf4-b043186f4f9f hitkem008.jpeg",
+      "SourceId": "Fiorello",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\rusla\\source\\repos\\Fiorello\\Fiorello\\wwwroot\\",
+      "BasePath": "_content/Fiorello",
+      "RelativePath": "assets/img/2967942b-c197-4a80-bdf4-b043186f4f9f hitkem008.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\2967942b-c197-4a80-bdf4-b043186f4f9f hitkem008.jpeg"
     },
     {
       "Identity": "C:\\Users\\rusla\\source\\repos\\Fiorello\\Fiorello\\wwwroot\\assets\\img\\31a5ffbd-d3ec-428a-8971-25f8c188a2d9 memmedaga.jpeg",
