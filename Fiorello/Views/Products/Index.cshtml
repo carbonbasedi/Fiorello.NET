@@ -602,12 +602,12 @@
 												<div id="products" class="mkdf-pl-outer mkdf-outer-space">
 													@foreach(var product in Model.Products)
 													{
-													<div class="mkdf-pli mkdf-item-space ">
+														<div class="mkdf-pli mkdf-item-space ">
 														<div class="mkdf-pli-inner">
 															<div class="mkdf-pli-image">
 																<span class="mkdf-pli-new-product">@product.Type.ToString()</span>
 																<img width="620" height="800"
-																	 src="~/assets/img/@product.ProductPhotos.FirstOrDefault(p => p.IsMain).Name"
+																	 src="~/assets/img/@product.ProductPhotos.FirstOrDefault(p => p.IsMain)?.Name"
 																	 class="attachment-woocommerce_single size-woocommerce_single wp-post-image"
 																	 alt="h"
 																	 sizes="(max-width: 620px) 100vw, 620px"
@@ -663,6 +663,7 @@
 	</div>
 </div>
 @section Scripts{
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 	<script>
 		window.RS_MODULES = window.RS_MODULES || {};
 		window.RS_MODULES.modules = window.RS_MODULES.modules || {};
