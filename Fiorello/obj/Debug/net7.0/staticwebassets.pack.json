@@ -7361,6 +7361,10 @@
       "PackagePath": "staticwebassets\\assets\\img\\2217a6bf-616a-4bcd-a3c6-5d21220c653d feature-work-3.jpg"
     },
     {
+      "Id": "C:\\Users\\rusla\\source\\repos\\Fiorello\\Fiorello\\wwwroot\\assets\\img\\25d79bab-1960-4552-80d0-06b3a340a10c florist1.jpeg",
+      "PackagePath": "staticwebassets\\assets\\img\\25d79bab-1960-4552-80d0-06b3a340a10c florist1.jpeg"
+    },
+    {
       "Id": "C:\\Users\\rusla\\source\\repos\\Fiorello\\Fiorello\\wwwroot\\assets\\img\\2967942b-c197-4a80-bdf4-b043186f4f9f hitkem008.jpeg",
       "PackagePath": "staticwebassets\\assets\\img\\2967942b-c197-4a80-bdf4-b043186f4f9f hitkem008.jpeg"
     },
@@ -7393,10 +7397,6 @@
       "PackagePath": "staticwebassets\\assets\\img\\657fd56f-991d-41e9-839b-90704b270620 feature-work-4.jpg"
     },
     {
-      "Id": "C:\\Users\\rusla\\source\\repos\\Fiorello\\Fiorello\\wwwroot\\assets\\img\\6c269a3d-bb9c-47b5-84e8-8a605f196a09 feature-work-1.jpg",
-      "PackagePath": "staticwebassets\\assets\\img\\6c269a3d-bb9c-47b5-84e8-8a605f196a09 feature-work-1.jpg"
-    },
-    {
       "Id": "C:\\Users\\rusla\\source\\repos\\Fiorello\\Fiorello\\wwwroot\\assets\\img\\6ca29559-3f45-4921-8737-7f842392130f feature-work-2.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\6ca29559-3f45-4921-8737-7f842392130f feature-work-2.jpg"
     },
@@ -7421,6 +7421,10 @@
       "PackagePath": "staticwebassets\\assets\\img\\9bbfa0cd-a3de-4207-94fd-920b96457eb6 feature-work-3.jpg"
     },
     {
+      "Id": "C:\\Users\\rusla\\source\\repos\\Fiorello\\Fiorello\\wwwroot\\assets\\img\\a33c5eef-bd52-4a34-bcf4-d9174b1424a0 florist3.jpeg",
+      "PackagePath": "staticwebassets\\assets\\img\\a33c5eef-bd52-4a34-bcf4-d9174b1424a0 florist3.jpeg"
+    },
+    {
       "Id": "C:\\Users\\rusla\\source\\repos\\Fiorello\\Fiorello\\wwwroot\\assets\\img\\a98a96aa-b2db-4d93-8426-ad6b84d3396b inception - Copy.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\a98a96aa-b2db-4d93-8426-ad6b84d3396b inception - Copy.jpg"
     },
@@ -7435,6 +7439,14 @@
     {
       "Id": "C:\\Users\\rusla\\source\\repos\\Fiorello\\Fiorello\\wwwroot\\assets\\img\\ead9e1a7-9a14-47b8-8eb0-5736418093f0 feature-work-3.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\ead9e1a7-9a14-47b8-8eb0-5736418093f0 feature-work-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\rusla\\source\\repos\\Fiorello\\Fiorello\\wwwroot\\assets\\img\\f7aba30f-a373-4f70-b451-9736add5cccf florist4.jpeg",
+      "PackagePath": "staticwebassets\\assets\\img\\f7aba30f-a373-4f70-b451-9736add5cccf florist4.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\rusla\\source\\repos\\Fiorello\\Fiorello\\wwwroot\\assets\\img\\fde1bf94-c6a5-49f2-a97b-3e3474ed95eb florist2.jpeg",
+      "PackagePath": "staticwebassets\\assets\\img\\fde1bf94-c6a5-49f2-a97b-3e3474ed95eb florist2.jpeg"
     },
     {
       "Id": "C:\\Users\\rusla\\source\\repos\\Fiorello\\Fiorello\\wwwroot\\assets\\js\\JavaScript.js",
