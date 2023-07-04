@@ -18,5 +18,6 @@ namespace Fiorello.Areas.admin.ViewModels.SliderContent
 		[Display(Name = "Slider Title")]
 		public int SliderId { get; set; }
 		public List<SelectListItem>? SliderTitleList { get; set; }
-	}
+
+    }
 }

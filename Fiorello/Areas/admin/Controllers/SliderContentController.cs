@@ -1,5 +1,6 @@
 ﻿using Fiorello.Areas.admin.ViewModels.SliderContent;
 using Fiorello.DAL;
+using Fiorello.Utilities.File;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
